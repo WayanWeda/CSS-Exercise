@@ -1,0 +1,133 @@
+.card {
+    width: 350px;
+    height: 520px;
+    border: 1px solid #000;
+    margin: 50px auto;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 15px;
+    padding: 20px;
+
+}
+h1{
+    line-height: 5px;
+}
+.card p {
+    
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.card .form-content{
+    position:relative;
+}
+.card .form-content input{
+    width: 95%;
+    padding: 1.3rem 10px;
+    font-size: 15px;
+    letter-spacing: 0.062rem;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 5px;
+    text-align: left;
+}
+.card .form-content :focus{
+    outline:none;
+    border: 2px solid #0077b6;
+}
+.card .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    padding: 0.625rem 0;
+    font-size: 1rem;
+    color: gray;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card .inputBox input:focus ~ label,
+.card .inputBox input:valid ~ label,
+.card .inputBox input:not([value=""]) ~ label {
+    top: -1.125rem;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.75rem;
+    background-color: #fff;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.card .inputBox input:focus {
+    outline: none;
+    border: 2px solid #1a73e8;
+}
+.card input[type="submit"] {
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #1a73e8;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    border-radius: 0.312rem;
+    font-size: 1rem;
+    float: right;
+  }
+  .card input[type="submit"]:hover {
+    background-color: #287ae6;
+    box-shadow: 0 1px 1px 0 rgba(66,133,244,0.45), 0 1px 3px 1px rgba(66,133,244,0.3);
+  }
+  .card-submit{
+    align-items:center;
+  }
+footer{
+    text-align: center;
+}
+.submit{
+    width: 100% ;
+    height: 40px;
+    border-radius: 5rem;
+    background-color: #0077b6;
+    color: #fff;
+}
+.submit:hover{
+    background-color: #4796c1;
+}
+.social{
+    width: 100%;
+    height: 40px;
+    border-radius: 5rem;
+    background-color: white;
+    color: #5c677d;
+    cursor: pointer;
+    outline: none;
+}
+.social:hover{
+    background-color: #5c677d ;
+    color:#fff;
+}
+a{
+    text-decoration: 0;
+}
+a:hover{
+    background-color:#4796c1;
+    border-radius: 0.5rem;
+}
+.divider{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #5c677d;
+}
+.divider::before, .divider::after{
+    content: '';
+    border-top: 2px solid #ccc;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+.divider::after{
+    margin: 0 0 0 20px;
+}
